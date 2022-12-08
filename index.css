@@ -4,6 +4,7 @@ body {
     background-color: #1F2937;
     text-align: left;
 }
+
 h1 {
     font-family: 'Karla', sans-serif;
     color: white
@@ -38,7 +39,7 @@ button {
     display: inline-block;
     text-align: center;
     margin-top: 1.5rem;
-    height: 39px;
-    width: 211px;
-    border-radius: 6px;
+    height: 45px;
+    width: 220px;
+    border-radius: 6px;    
 }
