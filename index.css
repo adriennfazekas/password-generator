@@ -41,5 +41,6 @@ button {
     margin-top: 1.5rem;
     height: 45px;
     width: 220px;
-    border-radius: 6px;    
+    border-radius: 6px;
+    line-height: 2.7rem; 
 }

@@ -3,30 +3,26 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let randomPasswordOne = document.getElementById("password-one")
 let randomPasswordTwo = document.getElementById("password-two")
-let passwordOne = ""
-let passwordTwo = ""
-generatedPassword = false
 
 function randomPassword (a) {
+    let password = ""
     for(let i = 0; i < 16; i++) {
-        password = Math.floor(Math.random() * characters.length)
-        password = characters[password]
-        a.textContent += password
-        generatedPassword = true
+        index = Math.floor(Math.random() * characters.length)
+        index = characters[index]
+        password += index        
     }
+        a.textContent = password
 }
 
 function createRandomPassword () {
-    if (generatedPassword === false) {
-        passwordOne = randomPassword(randomPasswordOne)
-        passwordTwo = randomPassword(randomPasswordTwo)
-    } else {
-        randomPasswordOne.textContent = ""
-        randomPasswordTwo.textContent = ""
-        passwordOne = randomPassword(randomPasswordOne)
-        passwordTwo = randomPassword(randomPasswordTwo)
-    }
-    
+    clearPassword()
+    passwordOne = randomPassword(randomPasswordOne)
+    passwordTwo = randomPassword(randomPasswordTwo)
+}
+
+function clearPassword() {
+    randomPasswordOne.textContent = ""
+    randomPasswordTwo.textContent = ""
 }
 
 
