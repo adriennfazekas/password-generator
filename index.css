@@ -19,7 +19,7 @@ span {
     color: #D5D4D8;
 }
 
-button {
+.generate-button {
     display: block;
     margin-top: 2rem;
     height: 42px;
@@ -30,7 +30,10 @@ button {
     font-size: 16px;
     color: white;
     border: none;
+}
 
+.copy-button {
+    border: none;
 }
 
 .generated-password {

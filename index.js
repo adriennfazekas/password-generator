@@ -25,6 +25,13 @@ function clearPassword() {
     randomPasswordTwo.textContent = ""
 }
 
+function copyPassword(index) {
+    let text = document.getElementById(index).innerHTML;
+
+    navigator.clipboard.writeText(text);
+}
+
+
 
 
     
